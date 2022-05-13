@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pendataan_dan_penyuratan;
+package pendataan_dan_penyuratan.Model;
 
 /**
  *
  * @author MSi-GAMING
  */
-public class DataKelurahan {
+public class DataPenduduk extends DataKelurahan {
     
 }

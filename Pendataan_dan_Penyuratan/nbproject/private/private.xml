@@ -3,11 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/DataKelurahan.java</file>
-            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/DataPenduduk.java</file>
-            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/PendataanPenyuratan.java</file>
-            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Main.java</file>
-            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/DataPegawai.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Framework/Menu.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Framework/ProcessingMenu.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Main.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Model/DataPegawai.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Model/DataKelurahan.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Model/DataPenduduk.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Framework/MenuPenyuratan.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Model/TamplateSurat.java</file>
+            <file>file:/C:/Users/MSi-GAMING/Documents/NetBeansProjects/PA_PBO/Pendataan_dan_Penyuratan/src/pendataan_dan_penyuratan/Framework/MenuPendataan.java</file>
         </group>
     </open-files>
 </project-private>
