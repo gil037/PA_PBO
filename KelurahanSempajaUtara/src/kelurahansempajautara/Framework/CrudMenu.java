@@ -16,9 +16,9 @@ public interface CrudMenu {
     public void tambahDataPenduduk(ArrayList<DataPenduduk> DataPenduduk);
     public void editDataPenduduk(ArrayList<DataPenduduk> DataPenduduk);
     public void hapusDataPenduduk(ArrayList<DataPenduduk> DataPenduduk);
-    public void lihatDataPenduduk(ArrayList<DataPenduduk> DataPenduduk);
+    public void lihatDataPenduduk();
     public void tambahDataPegawai(ArrayList<DataPegawai> DataPegawai);
     public void editDataPegawai(ArrayList<DataPegawai> DataPegawai);
     public void hapusDataPegawai(ArrayList<DataPegawai> DataPegawai);
-    public void lihatDataPegawai(ArrayList<DataPegawai> DataPegawai);
+    public void lihatDataPegawai();
 }

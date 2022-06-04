@@ -20,7 +20,7 @@ import kelurahansempajautara.Framework.MenuPenduduk;
  */
 public final class Main {
     
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Menu obj = new Menu();
         MenuPenduduk mp1 = new MenuPenduduk();
         MenuPegawai mp2 = new MenuPegawai();
@@ -60,7 +60,7 @@ public final class Main {
 
                         switch(p1){
                             case "1":
-                                obj.lihatDataPenduduk(DataPenduduk);
+                                obj.lihatDataPenduduk();
                                 obj.kembali();
                                 break;
                             case "2":
@@ -76,7 +76,7 @@ public final class Main {
                                 obj.kembali();
                                 break;
                             case "5":
-                                obj.lihatDataPegawai(DataPegawai);
+                                obj.lihatDataPegawai();
                                 obj.kembali();
                                 break;
                             case "6":
@@ -117,7 +117,7 @@ public final class Main {
 
                         switch(p2){
                             case "1":
-                                obj.lihatDataPenduduk(DataPenduduk);
+                                obj.lihatDataPenduduk();
                                 obj.kembali();
                                 break;
                             case "2":
@@ -149,7 +149,7 @@ public final class Main {
                         obj.kembali();
                         break;
                 }
-            } catch (Exception e){
+            } catch (NumberFormatException e){
                 System.out.println("Anda memasukkan huruf bukan angka !");
                 obj.clearScreen();
             }
