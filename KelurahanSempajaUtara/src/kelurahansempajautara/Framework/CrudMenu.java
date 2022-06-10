@@ -8,17 +8,29 @@ package kelurahansempajautara.Framework;
 import java.util.ArrayList;
 import kelurahansempajautara.Class.DataPenduduk;
 import kelurahansempajautara.Class.DataPegawai;
+
 /**
  *
  * @author MSi-GAMING
  */
 public interface CrudMenu {
     public void tambahDataPenduduk(ArrayList<DataPenduduk> DataPenduduk);
+
     public void editDataPenduduk(ArrayList<DataPenduduk> DataPenduduk);
+
     public void hapusDataPenduduk(ArrayList<DataPenduduk> DataPenduduk);
+
     public void lihatDataPenduduk();
+
+    public void lihatDataPendudukSaatIni(ArrayList<DataPenduduk> DataPenduduk);
+
     public void tambahDataPegawai(ArrayList<DataPegawai> DataPegawai);
+
     public void editDataPegawai(ArrayList<DataPegawai> DataPegawai);
+
     public void hapusDataPegawai(ArrayList<DataPegawai> DataPegawai);
+
     public void lihatDataPegawai();
+
+    public void lihatDataPegawaiSaatIni(ArrayList<DataPegawai> DataPegawai);
 }

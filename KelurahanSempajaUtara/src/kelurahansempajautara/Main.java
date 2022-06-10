@@ -10,6 +10,7 @@ import java.util.Scanner;
 import kelurahansempajautara.Class.DataKelurahan;
 import kelurahansempajautara.Class.DataPegawai;
 import kelurahansempajautara.Class.DataPenduduk;
+import kelurahansempajautara.Framework.BuatSurat;
 import kelurahansempajautara.Framework.Menu;
 import kelurahansempajautara.Framework.MenuPegawai;
 import kelurahansempajautara.Framework.MenuPenduduk;
@@ -19,15 +20,16 @@ import kelurahansempajautara.Framework.MenuPenduduk;
  * @author MSi-GAMING
  */
 public final class Main {
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) throws InterruptedException {
         Menu obj = new Menu();
         MenuPenduduk mp1 = new MenuPenduduk();
         MenuPegawai mp2 = new MenuPegawai();
+        BuatSurat mp3 = new BuatSurat();
         ArrayList<DataPegawai> DataPegawai = new ArrayList();
         ArrayList<DataPenduduk> DataPenduduk = new ArrayList();
         Scanner input = new Scanner(System.in);
-        while (true){
+        while (true) {
             try {
                 System.out.println("==========================================");
                 System.out.println("| WEBSITE PENDATAAN DAN SURAT - MENYURAT |");
@@ -43,7 +45,7 @@ public final class Main {
 
                 int pilih = Integer.parseInt(input.nextLine());
 
-                switch (pilih){
+                switch (pilih) {
                     case 1:
                         System.out.println("==========================================");
                         System.out.println("|            WEBSITE PENDATAAN           |");
@@ -52,13 +54,15 @@ public final class Main {
                         System.out.println("==========================================");
                         mp1.penduduk();
                         mp2.pegawai();
-                        System.out.println("[9] Keluar");
+                        System.out.println("[9] Lihat Data Penduduk Saat ini");
+                        System.out.println("[10] Lihat Data Pegawai Saat ini");
+                        System.out.println("[11] Keluar");
                         System.out.println("------------------------------------------");
                         System.out.print("Pilih menu :  ");
 
                         String p1 = input.nextLine();
 
-                        switch(p1){
+                        switch (p1) {
                             case "1":
                                 obj.lihatDataPenduduk();
                                 obj.kembali();
@@ -92,6 +96,14 @@ public final class Main {
                                 obj.kembali();
                                 break;
                             case "9":
+                                obj.lihatDataPendudukSaatIni(DataPenduduk);
+                                obj.kembali();
+                                break;
+                            case "10":
+                                obj.lihatDataPegawaiSaatIni(DataPegawai);
+                                obj.kembali();
+                                break;
+                            case "11":
                                 obj.kembali();
                                 break;
                             default:
@@ -106,29 +118,31 @@ public final class Main {
                         System.out.println("|         KELURAHAN SEMPAJA UTARA        |");
                         System.out.println("|              KOTA SAMARINDA            |");
                         System.out.println("==========================================");
-                        System.out.println("[1] Surat Ijin Menyelenggaran Acara");
-                        System.out.println("[2] Surat Keterangan");
-                        System.out.println("[3] Surat Pindah");
-                        System.out.println("[4] Keluar");
+                        mp3.buatsurat();
+                        System.out.println("[5] Keluar");
                         System.out.println("------------------------------------------");
                         System.out.print("Pilih menu :  ");
 
                         String p2 = input.nextLine();
 
-                        switch(p2){
+                        switch (p2) {
                             case "1":
-                                obj.lihatDataPenduduk();
+                                obj.SuratKtm();
                                 obj.kembali();
                                 break;
                             case "2":
-                                obj.tambahDataPenduduk(DataPenduduk);
+                                obj.suratKematian();
                                 obj.kembali();
                                 break;
                             case "3":
-                                obj.editDataPenduduk(DataPenduduk);
+                                obj.suratKelahiran();
                                 obj.kembali();
                                 break;
                             case "4":
+                                obj.suratPindah();
+                                obj.kembali();
+                                break;
+                            case "5":
                                 obj.kembali();
                                 break;
                             default:
@@ -149,7 +163,7 @@ public final class Main {
                         obj.kembali();
                         break;
                 }
-            } catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Anda memasukkan huruf bukan angka !");
                 obj.clearScreen();
             }
