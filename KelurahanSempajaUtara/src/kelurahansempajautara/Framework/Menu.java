@@ -216,7 +216,7 @@ public class Menu implements CrudMenu {
             System.out.println(
                     "\n=============================================================================================================================================================================================================================================================================================");
             System.out.println(
-                    "NO\t\tID\t\tNAMA\t\t\tALAMAT\t\t\tJENIS KELAMIN\t\tTEMPAT LAHIR\t\tTANGGAL LAHIR\t\tAGAMA\t\tPEKERJAAN\t\tSTATUS\t\tKEWARGANEGARAAN\t\tNIK");
+                    "NO\t\tID\t\tNAMA\t\t\t\tALAMAT\t\t\tJENIS KELAMIN\t\tTEMPAT LAHIR\t\tTANGGAL LAHIR\t\tAGAMA\t\t\tPEKERJAAN\t\tSTATUS\t\tKEWARGANEGARAAN\t\tNIK");
             System.out.println(
                     "\n=============================================================================================================================================================================================================================================================================================");
             while (rs.next()) {
@@ -234,7 +234,7 @@ public class Menu implements CrudMenu {
                 String k = rs.getString("Nik");
 
                 System.out.println(
-                        String.format("%d\t%s\t\t\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t\t%s\t\t%s\t\t%s\t\t%s",
+                        String.format("%d\t%s\t\t\t\t%s\t\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t\t%s\t\t%s\t\t%s\t\t%s",
                                 Id_Penduduk, a, b, c, d, e, f, g, h, i, j, k));
                 System.out.println(
                         "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
@@ -437,7 +437,7 @@ public class Menu implements CrudMenu {
             System.out.println(
                     "\n=============================================================================================================================================================================================================================================================================================");
             System.out.println(
-                    "NO\tID\t\tNAMA\t\t\tALAMAT\t\t\tJENIS KELAMIN\t\tTEMPAT LAHIR\t\tTANGGAL LAHIR\t\tAGAMA\t\tJABATAN\t\tSTATUS\t\tKEWARGANEGARAAN\t\tNIP");
+                    "NO\tID\t\tNAMA\t\t\tALAMAT\t\t\t\tJENIS KELAMIN\t\tTEMPAT LAHIR\t\tTANGGAL LAHIR\t\tAGAMA\t\tJABATAN\t\t\t\tSTATUS\t\tKEWARGANEGARAAN\t\tNIP");
             System.out.println(
                     "\n=============================================================================================================================================================================================================================================================================================");
             while (rs.next()) {
@@ -455,7 +455,7 @@ public class Menu implements CrudMenu {
                 String k = rs.getString("Nip");
 
                 System.out
-                        .println(String.format("%d\t%s\t\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t\t%s\t\t%s\t\t%s\t\t%s",
+                        .println(String.format("%d\t%s\t\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t%s\t\t\t\t%s\t\t%s\t\t%s",
                                 Id_Penduduk, a, b, c, d, e, f, g, h, i, j, k));
                 System.out.println(
                         "---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
@@ -546,7 +546,7 @@ public class Menu implements CrudMenu {
                     "Demikian surat keterangan ini saya buat dengan sebenar-benarnya berdasarkan fakta yang ada serta sesuai dengan\npermohonan orang yang bersangkutan. " +
                     "Semoga surat ini dapat dipergunakan sebagaimana mestinya. Atas\nperhatiannya saya ucapkan terima kasih.\n\n";
         String tgl = String.format("%s", tanggal);
-        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Ihsan Magribi";
+        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Dimas Kamaswara";
         
         
         clearScreen();
@@ -620,7 +620,7 @@ public class Menu implements CrudMenu {
                     "Demikian surat keterangan ini saya buat dengan sebenar-benarnya berdasarkan\nfakta yang ada. " +
                     "Semoga surat ini dapat dipergunakan sebagaimana mestinya.\nAtas perhatiannya saya ucapkan terima kasih.\n\n",tanggal, meninggal, sebab);
         String tgl = String.format("       %s", tanggal);
-        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Ihsan Magribi";
+        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Dimas Kamaswara";
         
         clearScreen();
         System.out.print(Kop);
@@ -684,7 +684,7 @@ public class Menu implements CrudMenu {
                     "Anak Ke              : %s\n", ayah, ibu, anakKe); 
         String penutup = "\nDemikian Surat Keterangan Kelahiran ini dibuat untuk dipergunakan sebagaimana Mestinya.";
         String tgl = String.format("\n\n\n       %s", tanggalLahir);
-        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Ihsan Magribi";
+        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Dimas Kamaswara";
         
         clearScreen();
         System.out.print(Kop);
@@ -760,7 +760,7 @@ public class Menu implements CrudMenu {
                     "Alasan Pindah          : %s\n", nik, nama, tempatLahir, tanggalLahir, jenisKelamin, status, pekerjaan, agama, warganegaraan, alamatasal, alamattujuan, alasan);
         String penutup = "\nDemikian Surat Keterangan Pindah ini dibuat untuk dipergunakan sebagaimana Mestinya.";
         String tgl = String.format("\n\n\n       %s", tanggal);
-        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Ihsan Magribi";
+        String ttd = "\nKepala Lurah Sempaja Utara\n\n\n      Dimas Kamaswara";
         
         
         clearScreen();
